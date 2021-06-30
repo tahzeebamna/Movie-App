@@ -1,5 +1,7 @@
 import React,{useState,useContext} from 'react';
 import { NewsContext } from '../NewsContext'
+import '../App.css';
+
 
 // import './subHeader.css';
 
@@ -28,10 +30,12 @@ const Navbar = () => {
    
     
     return (
-        <div>
+        <div className="mainDrp">
            <div >
-           <div className="button" onClick={showDropdownMenu}> Languages</div>
-               {/* <h1>Hello dropdown</h1> */}
+           <div className="dropdown" > 
+                <p>Languages</p>
+                <button className="drpBtn" onClick={showDropdownMenu}>v</button>
+           </div>
             {isActive?<ul>
                 <li onClick={()=>{setLangSource("ar")}}>ARABIC</li>
                 <li onClick={()=>{setLangSource("de")}}>GERMAN</li>
@@ -49,7 +53,10 @@ const Navbar = () => {
           </ul>:null}
           {/*  */}
             </div>
-            <div className="button" onClick={showDropdownCountry}> COUNTRY </div>
+            <div className="dropdown" > 
+                 <p>Country</p>
+                <button className="drpBtn" onClick={showDropdownCountry}> v </button>
+             </div>
                {/* <h1>Hello dropdown</h1>  ae ar at au be bg br ca ch cn co cu cz de eg fr gb gr hk hu id ie il in it jp kr lt lv ma mx my ng nl no nz ph pl pt ro rs ru sa se sg si sk th tr tw ua us ve za  */}
             {isActiveC?<ul>
                 <li onClick={()=>{setLangSource("ar")}}>ARABIC</li>
@@ -74,7 +81,7 @@ const Navbar = () => {
                 <li onClick={()=>{setLangSource("id")}}>CHINESE</li>
                 <li onClick={()=>{setLangSource("in")}}>CHINESE</li>
                 </ul>:null}
-                <div className="button" onClick={showDropdownChanells}> COUNTRY </div>
+                {/* <div className="button" onClick={showDropdownChanells}> COUNTRY </div> */}
                 {/* {isActiveCo?
                 <ul>
                    {data.articles.map((cur)=>{

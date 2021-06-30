@@ -1,7 +1,6 @@
 import React,{useContext} from 'react'
-import { NewsContext } from '../NewsContext'
-
-
+import { NewsContext } from '../NewsContext';
+import '../App.css'
 
 const Input = () => {
    const{inputText,setInputText}=useContext(NewsContext)
@@ -15,8 +14,8 @@ const Input = () => {
             <input
                 type="text"
                 onChange={handleChange}
-                value={inputText}/>
-            {inputText}
+                value={inputText}
+                placeholder="Search your News..............."/>
         </div>
 
     )

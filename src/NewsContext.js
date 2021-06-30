@@ -18,6 +18,7 @@ const NewsContextProvider = ({children}) => {
 
     const [data, setData] = useState()
     const apiKey = "10f798b3e3e84a96acacce207df76dde"
+    // e
   
     useEffect(() => {
       const fetchNews = async () => {

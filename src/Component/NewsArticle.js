@@ -3,11 +3,16 @@ import React from 'react'
 const NewsArticle = ({data}) => {
     
     return (
-        <div>
-            {data.title}
-            <h1>
-                {/* Card or Article will me made by me {data.title} */}
-            </h1>
+        <div className="card">
+            <div className="images">
+                <img src={data.urlToImage}/>
+            </div>
+            <div className="txt">
+                <h2>{data.title}</h2>
+                <p>{data.content}</p>
+                <p>{data.publishedAt}</p>
+            </div>
+          
         </div>
     )
 }

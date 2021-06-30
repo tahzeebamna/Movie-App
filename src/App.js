@@ -9,13 +9,14 @@ import SubHeader from './Component/SubHeader';
 
 function App() {
   return (
-    <div className="App">
+    <div className="main">
       <NewsContextProvider>
-      <Input/>
-      <SubHeader/>
-
-      <h1>Hello</h1>
-      <Category/>
+     <div className="header">'
+        <Input/>
+        <Category/>
+        <SubHeader/>
+     </div>
+      
       <News/>
       </NewsContextProvider>
       
