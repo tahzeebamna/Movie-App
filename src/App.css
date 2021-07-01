@@ -88,6 +88,13 @@ input ::placeholder{
  border-radius: 5px;
  margin-left: 15px;
 }
+ul{
+  margin-top: 10px;
+  width: 130px;
+  height: 160px;
+  border: 1px solid rgb(189, 52, 52);
+  overflow: scroll;
+}
 
 /* Dropdown.js */
 .mainDrp{
@@ -120,14 +127,14 @@ input ::placeholder{
   color: black;
   margin-right: 20px;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 400;
   width: 20px;
   cursor: pointer;
 }
-:hover.drpBtn{
+/* :hover.drpBtn{
   color: lightseagreen;
   transition: 1s;
-}
+} */
 .cardMain{
   display: flex;
 }
@@ -195,4 +202,18 @@ img{
   align-items: center;
   text-align: center;
   margin-left: 3%;
+}
+
+
+
+/* Drop down */
+.ult1{
+  margin-top: 200px;
+  background-color: #fff;
+  margin-left: -50px;
+}
+.ult{
+  margin-top: 200px;
+  background-color: #fff;
+  margin-left: -150px;
 }

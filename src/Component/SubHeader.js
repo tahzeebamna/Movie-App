@@ -6,10 +6,11 @@ import '../App.css';
 // import './subHeader.css';
 
 const Navbar = () => {
-    const{setLangSource,data}=useContext(NewsContext)
+    const{setLangSource,data, source , setSourxes}=useContext(NewsContext)
     //const arr=[ "ar","de","en","es","fr","he","it","nl","no","pt","ru","se","ud","zh"]
     const [isActive, setIsActive] = useState(false)
     const [isActiveC, setIsActiveC] = useState(false)
+    const [isActiveD, setIsActiveD] = useState(false)
     const [isActiveCo, setIsActiveCo] = useState(false)
 
 
@@ -26,11 +27,35 @@ const Navbar = () => {
         e.preventDefault()
         setIsActiveCo(!isActiveCo)
     }
+    const showDropdownChanellsD =(e)=>{
+        e.preventDefault()
+        setIsActiveD(!isActiveD)
+    }
    
    
     
     return (
-        <div className="mainDrp">
+        <div className="mainDrp" >
+
+            <div className="dropdown__main" onClick={showDropdownChanellsD}>
+                <div className="dropdown" > 
+                    <p>Sources</p>
+                    <p className="drpBtn">v</p>
+                </div>
+                {isActiveD?
+                        (<ul className="ult">
+                            {
+                                source && source.length > 0 && source.map((i) => (
+                                    i && <li onClick={()=>{setSourxes({i})}}>{i}</li>
+                                ))
+                            }
+                        </ul>)
+                        : 
+                        null
+                    }
+            </div>
+
+
            <div >
            <div className="dropdown" > 
                 <p>Languages</p>
@@ -58,7 +83,7 @@ const Navbar = () => {
                 <p className="drpBtn" onClick={showDropdownCountry}>v </p>
              </div>
                {/* <h1>Hello dropdown</h1>  ae ar at au be bg br ca ch cn co cu cz de eg fr gb gr hk hu id ie il in it jp kr lt lv ma mx my ng nl no nz ph pl pt ro rs ru sa se sg si sk th tr tw ua us ve za  */}
-            {isActiveC?<ul>
+            {isActiveC?<ul className="ult">
                 <li onClick={()=>{setLangSource("ar")}}>ARABIC</li>
                 <li onClick={()=>{setLangSource("ae")}}>GERMAN</li>
                 <li onClick={()=>{setLangSource("at")}}>ENGLISH</li>
