@@ -22,7 +22,7 @@
 }
 /* input.js css */
 input{
-  width:330px;
+  width:230px;
   display: flex;
   margin: 5px;
   justify-content: center;
@@ -89,11 +89,12 @@ input ::placeholder{
  margin-left: 15px;
 }
 ul{
-  margin-top: 10px;
-  width: 130px;
-  height: 160px;
+  margin-top: -20px;
+  background: #fff !important;
+  width: 100px;
+  height: 130px;
   border: 1px solid rgb(189, 52, 52);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 /* Dropdown.js */
@@ -107,6 +108,7 @@ ul{
 }
 .dropdown{
   display: flex;
+  /* width: 80px; */
   color: black;
   border: none;
   font-family: 'Roboto Mono', monospace;
@@ -207,13 +209,42 @@ img{
 
 
 /* Drop down */
+li{
+  margin-top: 4px;
+
+  border-bottom: 0.5px solid grey;
+  justify-content: flex-start;
+  /* margin-left: -10px; */
+}
 .ult1{
   margin-top: 200px;
-  background-color: #fff;
-  margin-left: -50px;
+  background: #fff;
+  margin-left: -90px;
+  overflow-y: scroll;
+  font-family: sans-serif;
+  overflow-y: scroll;
+  font-weight: 100;
+  font-size: 12px;
+  border-bottom: 2px red;
 }
-.ult{
+.ult2{
   margin-top: 200px;
-  background-color: #fff;
-  margin-left: -150px;
+  background: #fff;
+  margin-left: -80px;
+  font-family: sans-serif;
+  overflow-y: scroll;
+  font-weight: 100;
+  font-size: 12px;
+}
+.ult3{
+  margin-top: 200px;
+  background: #fff;
+  margin-left: -80px;
+  overflow-y: scroll;
+  font-family: sans-serif;
+  overflow-y: scroll;
+  font-weight: 100;
+  font-size: 12px;
+
+
 }

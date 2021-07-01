@@ -37,13 +37,12 @@ const Navbar = () => {
     return (
         <div className="mainDrp" >
 
-            <div className="dropdown__main" onClick={showDropdownChanellsD}>
-                <div className="dropdown" > 
+                <div className="dropdown"  > 
                     <p>Sources</p>
-                    <p className="drpBtn">v</p>
+                    <p className="drpBtn" onClick={showDropdownChanellsD}>v</p>
                 </div>
                 {isActiveD?
-                        (<ul className="ult">
+                        (<ul className="ult1">
                             {
                                 source && source.length > 0 && source.map((i) => (
                                     i && <li onClick={()=>{setSourxes({i})}}>{i}</li>
@@ -53,15 +52,14 @@ const Navbar = () => {
                         : 
                         null
                     }
-            </div>
 
 
-           <div >
            <div className="dropdown" > 
                 <p>Languages</p>
                 <p className="drpBtn" onClick={showDropdownMenu}>v</p>
            </div>
-            {isActive?<ul>
+
+            {isActive?<ul className="ult2">
                 <li onClick={()=>{setLangSource("ar")}}>ARABIC</li>
                 <li onClick={()=>{setLangSource("de")}}>GERMAN</li>
                 <li onClick={()=>{setLangSource("en")}}>ENGLISH</li>
@@ -76,34 +74,30 @@ const Navbar = () => {
                 <li onClick={()=>{setLangSource("ja")}}>JAPANESE</li>
                 <li onClick={()=>{setLangSource("zh")}}>CHINESE</li>
           </ul>:null}
-          {/*  */}
-            </div>
             <div className="dropdown" > 
                  <p>Country</p>
                 <p className="drpBtn" onClick={showDropdownCountry}>v </p>
              </div>
-               {/* <h1>Hello dropdown</h1>  ae ar at au be bg br ca ch cn co cu cz de eg fr gb gr hk hu id ie il in it jp kr lt lv ma mx my ng nl no nz ph pl pt ro rs ru sa se sg si sk th tr tw ua us ve za  */}
-            {isActiveC?<ul className="ult">
-                <li onClick={()=>{setLangSource("ar")}}>ARABIC</li>
-                <li onClick={()=>{setLangSource("ae")}}>GERMAN</li>
-                <li onClick={()=>{setLangSource("at")}}>ENGLISH</li>
-                <li onClick={()=>{setLangSource("au")}}>SPANISH</li>
-                <li onClick={()=>{setLangSource("be")}}>FRENCH</li>
-                <li onClick={()=>{setLangSource("bg")}}>HEBREW</li>
-                <li onClick={()=>{setLangSource("br")}}>HINDI</li>
-                <li onClick={()=>{setLangSource("ca")}}>ITALIAN</li>
-                <li onClick={()=>{setLangSource("ch")}}>Norwegian</li>
-                <li onClick={()=>{setLangSource("cn")}}>NEPALI</li>
-                <li onClick={()=>{setLangSource("cu")}}>URDU</li>
-                <li onClick={()=>{setLangSource("cz")}}>JAPANESE</li>
-                <li onClick={()=>{setLangSource("de")}}>CHINESE</li>
-                <li onClick={()=>{setLangSource("eg")}}>CHINESE</li>
-                <li onClick={()=>{setLangSource("fr")}}>CHINESE</li>
-                <li onClick={()=>{setLangSource("gb")}}>CHINESE</li>
-                <li onClick={()=>{setLangSource("gr")}}>CHINESE</li>
+               
+            {isActiveC?<ul className="ult3">
+                <li onClick={()=>{setLangSource("ar")}}>Argentina</li>
+                <li onClick={()=>{setLangSource("ae")}}>United arab emirates</li>
+                <li onClick={()=>{setLangSource("at")}}>Austria</li>
+                <li onClick={()=>{setLangSource("au")}}>australia</li>
+                <li onClick={()=>{setLangSource("be")}}>belgium</li>
+                <li onClick={()=>{setLangSource("bg")}}>bulgaria</li>
+                <li onClick={()=>{setLangSource("br")}}>brazil</li>
+                <li onClick={()=>{setLangSource("ca")}}>canada</li>
+                <li onClick={()=>{setLangSource("ch")}}>switzerland</li>
+                <li onClick={()=>{setLangSource("cn")}}>china</li>
+                <li onClick={()=>{setLangSource("cu")}}>cuba</li>
+                <li onClick={()=>{setLangSource("cz")}}>czech republic</li>
+                <li onClick={()=>{setLangSource("si")}}>slovenia</li>
+                <li onClick={()=>{setLangSource("kr")}}>Korea</li>
+                <li onClick={()=>{setLangSource("gr")}}>greece</li>
                 <li onClick={()=>{setLangSource("hk")}}>CHINESE</li>
-                <li onClick={()=>{setLangSource("hu")}}>CHINESE</li>
-                <li onClick={()=>{setLangSource("id")}}>CHINESE</li>
+                <li onClick={()=>{setLangSource("nz")}}>New zealand </li>
+                <li onClick={()=>{setLangSource("jp")}}>japan</li>
                 <li onClick={()=>{setLangSource("in")}}>CHINESE</li>
                 </ul>:null}
                 {/* <div className="button" onClick={showDropdownChanells}> COUNTRY </div> */}
@@ -114,8 +108,12 @@ const Navbar = () => {
                    })}
                 </ul>:null
                 } */}
-        </div>
+        
+    </div>
+
     )
+
 }
+
 
 export default Navbar
