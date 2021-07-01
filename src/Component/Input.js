@@ -9,7 +9,7 @@ const Input = () => {
     }
     return (
 
-        <div>
+        <div  className="nav">
 
             <input
                 type="text"

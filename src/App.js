@@ -12,10 +12,8 @@ function App() {
     <div className="main">
       <NewsContextProvider>
         <div className="logo">NEWS.</div>
-     <div className="header">'
+     <div className="header">
         <Category/>
-        <SubHeader/>
-        <Input/>
 
      </div>
       

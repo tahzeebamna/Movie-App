@@ -35,9 +35,9 @@ const Navbar = () => {
    
     
     return (
-        <div className="mainDrp" >
+        <div className="nav" >
 
-                <div className="dropdown"  > 
+                <div className="btn"  > 
                     <p>Sources</p>
                     <p className="drpBtn" onClick={showDropdownChanellsD}>v</p>
                 </div>
@@ -54,27 +54,27 @@ const Navbar = () => {
                     }
 
 
-           <div className="dropdown" > 
+           <div className="btn" > 
                 <p>Languages</p>
                 <p className="drpBtn" onClick={showDropdownMenu}>v</p>
            </div>
 
             {isActive?<ul className="ult2">
-                <li onClick={()=>{setLangSource("ar")}}>ARABIC</li>
-                <li onClick={()=>{setLangSource("de")}}>GERMAN</li>
-                <li onClick={()=>{setLangSource("en")}}>ENGLISH</li>
-                <li onClick={()=>{setLangSource("es")}}>SPANISH</li>
-                <li onClick={()=>{setLangSource("fr")}}>FRENCH</li>
-                <li onClick={()=>{setLangSource("he")}}>HEBREW</li>
-                <li onClick={()=>{setLangSource("hi")}}>HINDI</li>
-                <li onClick={()=>{setLangSource("it")}}>ITALIAN</li>
-                <li onClick={()=>{setLangSource("no")}}>Norwegian</li>
-                <li onClick={()=>{setLangSource("ne")}}>NEPALI</li>
-                <li onClick={()=>{setLangSource("ur")}}>URDU</li>
-                <li onClick={()=>{setLangSource("ja")}}>JAPANESE</li>
-                <li onClick={()=>{setLangSource("zh")}}>CHINESE</li>
+                <li onClick={()=>{setLangSource("ar")}}>arabic</li>
+                <li onClick={()=>{setLangSource("de")}}>german</li>
+                <li onClick={()=>{setLangSource("en")}}>english</li>
+                <li onClick={()=>{setLangSource("es")}}>spanish</li>
+                <li onClick={()=>{setLangSource("fr")}}>french</li>
+                <li onClick={()=>{setLangSource("he")}}>hebrew</li>
+                <li onClick={()=>{setLangSource("hi")}}>hindi</li>
+                <li onClick={()=>{setLangSource("it")}}>italian</li>
+                <li onClick={()=>{setLangSource("no")}}>norwegian</li>
+                <li onClick={()=>{setLangSource("ne")}}>nepali</li>
+                <li onClick={()=>{setLangSource("ur")}}>urdu</li>
+                <li onClick={()=>{setLangSource("ja")}}>japenese</li>
+                <li onClick={()=>{setLangSource("zh")}}>chinese</li>
           </ul>:null}
-            <div className="dropdown" > 
+            <div className="btn" > 
                  <p>Country</p>
                 <p className="drpBtn" onClick={showDropdownCountry}>v </p>
              </div>

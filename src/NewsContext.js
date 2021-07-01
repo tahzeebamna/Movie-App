@@ -18,7 +18,7 @@ const NewsContextProvider = ({children}) => {
 
 
     const [data, setData] = useState()
-    const apiKey = "e83626cc19824bff8de80768bc114d7d"
+    const apiKey = "c65980d1ccc54054b4945892bc16f31e"
     
   
     useEffect(() => {
