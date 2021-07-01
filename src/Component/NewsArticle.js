@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NewsArticle = ({data}) => {
+const NewsArticle = ({data, category}) => {
     
     return (
         <div className="card">
@@ -10,7 +10,8 @@ const NewsArticle = ({data}) => {
             <div className="txt">
                 <h2>{data.title}</h2>
                 <p>{data.content}</p>
-                <p>{data.publishedAt}</p>
+                <h6>{data.publishedAt}</h6>
+                <h6>{category}</h6>
             </div>
           
         </div>

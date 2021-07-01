@@ -11,12 +11,12 @@ const Category = () => {
         <div>
            <div className="nav">
                {/* business entertainment general health science  sports technology */}
-               <button className="btn" onClick={()=>setCategory("technology")}>Technologies</button>
-               <button className="btn" onClick={()=>setCategory("entertainment")}>Entertainment</button>
-               <button className="btn" onClick={()=>setCategory("general")}>Politics</button>
-               <button className="btn" onClick={()=>setCategory("sports")}>Sports</button>
-               <button className="btn" onClick={()=>setCategory("business")}>Business</button>
-               <button className="btn" onClick={()=>setCategory("science")}>Science</button>
+               <p className="btn" onClick={()=>setCategory("technology")}>Technologies</p>
+               <p className="btn" onClick={()=>setCategory("entertainment")}>Entertainment</p>
+               <p className="btn" onClick={()=>setCategory("general")}>Politics</p>
+               <p className="btn" onClick={()=>setCategory("sports")}>Sports</p>
+               <p className="btn" onClick={()=>setCategory("business")}>Business</p>
+               <p className="btn" onClick={()=>setCategory("science")}>Science</p>
 
 
            </div>
@@ -27,3 +27,4 @@ const Category = () => {
 }
 
 export default Category
+

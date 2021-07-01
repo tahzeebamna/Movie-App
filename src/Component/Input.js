@@ -15,7 +15,7 @@ const Input = () => {
                 type="text"
                 onChange={handleChange}
                 value={inputText}
-                placeholder="Search your News..............."/>
+                placeholder="Search"/>
         </div>
 
     )

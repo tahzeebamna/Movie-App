@@ -11,13 +11,15 @@ function App() {
   return (
     <div className="main">
       <NewsContextProvider>
+        <div className="logo">NEWS.</div>
      <div className="header">'
-        <Input/>
         <Category/>
         <SubHeader/>
+        <Input/>
+
      </div>
       
-      <News/>
+       <News/>
       </NewsContextProvider>
       
     </div>

@@ -10,7 +10,7 @@ const News = () => {
     const{data}=useContext(NewsContext)
     
     return (
-        <div>
+        <div className="container">
             {
                data? data.articles.map((currVal)=>{
 

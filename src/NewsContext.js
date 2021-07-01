@@ -5,7 +5,7 @@ const NewsContext = React.createContext();
 
 const NewsContextProvider = ({children}) => {
     
-    const[inputText,setInputText]= useState("i")
+    const[inputText,setInputText]= useState()
     const [category, setCategory] = useState("technology")
     const [langSource, setLangSource] = useState("en")
     const [countrySource, setCountrySource] = useState("us")
@@ -17,8 +17,8 @@ const NewsContextProvider = ({children}) => {
 
 
     const [data, setData] = useState()
-    const apiKey = "10f798b3e3e84a96acacce207df76dde"
-    // e
+    const apiKey = "e83626cc19824bff8de80768bc114d7d"
+    
   
     useEffect(() => {
       const fetchNews = async () => {
